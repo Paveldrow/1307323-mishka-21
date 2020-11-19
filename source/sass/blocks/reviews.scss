@@ -1,5 +1,7 @@
 .reviews__title {
   margin: 0;
+  margin-top: 50px;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -11,13 +13,15 @@
 
 .reviews__text {
   margin: 0;
-  color: var(--basic-text-dark);
+  margin-bottom: 33px;
+  color: $text-dark;
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
 }
 
 .reviews__author-name {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -25,7 +29,8 @@
 
 .reviews__author-email {
   margin: 0;
-  color: var(--basic-text-dark);
+  margin-bottom: 30px;
+  color: $text-dark;
   font-weight: 400;
   font-size: 17px;
   line-height: 30px;
@@ -35,10 +40,11 @@
   box-sizing: border-box;
   height: 52px;
   width: 130px;
+  margin-bottom: 38px;
   padding: 0;
   font-family: inherit;
   background-color: $white;
-  border: 1px solid $able-line;
+  border: 1px solid $table-line;
   background-image: url("../../img/icon-button-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
