@@ -1,0 +1,25 @@
+.contacts__title {
+font-weight: 700;
+font-size: 18px;
+line-height: 30px;
+}
+
+.contacts__table {
+  width: 260px;
+  border-collapse: collapse;
+  vertical-align: top;
+  color: var(--basic-text-dark);
+  font-weight: 400;
+font-size: 14px;
+line-height: 30px;
+}
+
+.contacts__table td {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__table td:first-child {
+  width: 77px;
+}

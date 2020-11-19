@@ -1,0 +1,17 @@
+.product-table {
+  color: var(--basic-text-dark);
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+border-collapse: collapse;
+}
+
+.product-table__row {
+  padding-left: 30px;
+  border-bottom: 1px solid var(--basic-table-line);
+}
+
+.product-table__cell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
