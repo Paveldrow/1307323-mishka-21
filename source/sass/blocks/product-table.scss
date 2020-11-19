@@ -1,5 +1,5 @@
 .product-table {
-  color: var(--basic-text-dark);
+  color: $text-dark;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -8,7 +8,7 @@
 
 .product-table__row {
   padding-left: 30px;
-  border-bottom: 1px solid var(--basic-table-line);
+  border-bottom: 1px solid $table-line;
 }
 
 .product-table__cell {

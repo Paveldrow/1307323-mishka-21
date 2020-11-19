@@ -9,15 +9,15 @@
 }
 
 .categories__item:nth-child(odd) {
-  background-color: var(--basic-special-first-color);
+  background-color: $special-first-color;
 }
 
 .categories__item:nth-child(even) {
-  background-color: var(--basic-special-second-color);
+  background-color: $special-second-color;
 }
 
 .categories__link {
-  color: var(--basic-white);
+  color: $white;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;

@@ -6,7 +6,7 @@
 }
 
 .week-product__label {
-  color: var(--basic-special-first-color);
+  color: $pecial-first-color;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -14,7 +14,7 @@
 }
 
 .week-product__description {
-  color: var(--basic-text-dark);
+  color: $text-dark;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -22,7 +22,7 @@
 }
 
 .week-product__price {
-  color: var(--basic-text-dark);
+  color: $text-dark;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;

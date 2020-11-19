@@ -1,12 +1,12 @@
 .button {
   display: inline-block;
   vertical-align: top;
-  color: var(--basic-text-dark);
+  color: $text-dark;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  border: 2px solid var(--basic-text-dark);
+  border: 2px solid $text-dark;
   padding-top: 16px;
   padding-right: 70px;
   padding-bottom: 16px;
