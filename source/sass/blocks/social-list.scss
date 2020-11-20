@@ -9,10 +9,10 @@
 
 .social-list__item {
   margin-right: 41px;
-}
 
-.social-list__item:last-child {
-  margin-right: 0;
+  :last-child {
+    margin-right: 0;
+  }
 }
 
 .social-list__link {

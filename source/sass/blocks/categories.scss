@@ -8,14 +8,14 @@
   padding-top: 24px;
   padding-bottom: 31px;
   padding-left: 30px;
-}
 
-.categories__item:nth-child(odd) {
-  background-color: $special-first-color;
-}
+  &:nth-child(odd) {
+    background-color: $special-first-color;
+  }
 
-.categories__item:nth-child(even) {
-  background-color: $special-second-color;
+  &:nth-child(even) {
+    background-color: $special-second-color;
+  }
 }
 
 .categories__link {

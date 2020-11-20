@@ -19,8 +19,8 @@
   vertical-align: top;
   padding: 0;
   margin: 0;
-}
 
-.contacts__table td:first-child {
-  width: 77px;
+  :first-child {
+    width: 77px;
+  }
 }
