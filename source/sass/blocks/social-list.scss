@@ -10,7 +10,7 @@
 .social-list__item {
   margin-right: 41px;
 
-  :last-child {
+  &:last-child {
     margin-right: 0;
   }
 }
