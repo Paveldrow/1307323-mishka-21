@@ -2,7 +2,7 @@
   margin: 0;
   margin-top: 50px;
   margin-bottom: 15px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 25px;
   line-height: 30px;
 }
@@ -14,15 +14,15 @@
 .reviews__text {
   margin: 0;
   margin-bottom: 33px;
-  color: $text-dark;
-  font-weight: 400;
+  color: $dark;
+  font-weight: normal;
   font-size: 15px;
   line-height: 30px;
 }
 
 .reviews__author-name {
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 17px;
   line-height: 24px;
 }
@@ -30,8 +30,8 @@
 .reviews__author-email {
   margin: 0;
   margin-bottom: 30px;
-  color: $text-dark;
-  font-weight: 400;
+  color: $dark;
+  font-weight: normal;
   font-size: 17px;
   line-height: 30px;
 }

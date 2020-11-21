@@ -1,0 +1,78 @@
+.filter__field {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+
+  &--last {
+    margin-bottom: 17px;
+  }
+}
+
+.filter__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $special-first-color;
+}
+
+.filter__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter__item {
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.filter__label {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.filter__input-personal {
+  width: 260px;
+  padding-bottom: 18px;
+  border: none;
+  border-bottom: 2px solid $black;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+  }
+}
+
+.filter__textarea {
+  box-sizing: border-box;
+  width: 260px;
+  height: 142px;
+  padding: 17px;
+  resize: none;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    border: 2 px solid $dark;
+  }
+}
+
+.filter__discription {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: $dark;
+}

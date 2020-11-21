@@ -1,6 +1,6 @@
 .contacts__title {
   margin-bottom: 28px;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 }
@@ -9,8 +9,8 @@
   width: 260px;
   border-collapse: collapse;
   vertical-align: top;
-  color: $text-dark;
-  font-weight: 400;
+  color: $dark;
+  font-weight: normal;
   font-size: 14px;
   line-height: 30px;
 }
