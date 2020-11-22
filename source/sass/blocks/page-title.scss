@@ -1,0 +1,22 @@
+.page-title {
+  box-sizing: border-box;
+  background-color: $background-dark;
+  margin-bottom: 0;
+  padding-top: 73px;
+  padding-bottom: 74px;
+
+  &--index {
+    min-height: 283px;
+    background-image: url("../../img/background-index.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.page-title__title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  margin: 0;
+}

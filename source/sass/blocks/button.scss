@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+  width: 260px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $dark;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: $white;
+  text-transform: uppercase;
+  border: 2px solid $dark;
+}

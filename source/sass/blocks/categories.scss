@@ -1,0 +1,26 @@
+.categories__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories__item {
+  padding-top: 24px;
+  padding-bottom: 31px;
+  padding-left: 30px;
+
+  &:nth-child(odd) {
+    background-color: $special-first-color;
+  }
+
+  &:nth-child(even) {
+    background-color: $special-second-color;
+  }
+}
+
+.categories__link {
+  color: $white;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}

@@ -1,0 +1,18 @@
+.product-table {
+  color: $dark;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.product-table__row {
+  padding-left: 30px;
+  border-bottom: 1px solid $table-line;
+}
+
+.product-table__cell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
