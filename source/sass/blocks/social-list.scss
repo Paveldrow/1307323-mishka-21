@@ -1,10 +1,15 @@
 .social-list {
   display: flex;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
   padding-bottom: 27px;
   border-bottom: 1px solid $footer-line;
+
+@media (min-width: $tablet-width) {
+  border: none;
+}
 }
 
 .social-list__item {
@@ -22,7 +27,7 @@
 .social-list__link-instagram {
   width: 22px;
   height: 21px;
-  background-image: url("../../img/icon-social-instagram.svg");
+  background-image: url("../img/icon-social-instagram.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -30,7 +35,7 @@
 .social-list__link-facebook {
   width: 15px;
   height: 28px;
-  background-image: url("../../img/icon-social-facebook.svg");
+  background-image: url("../img/icon-social-facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -38,7 +43,7 @@
 .social-list__link-twitter {
   width: 23px;
   height: 20px;
-  background-image: url("../../img/icon-social-twitter.svg");
+  background-image: url("../img/icon-social-twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

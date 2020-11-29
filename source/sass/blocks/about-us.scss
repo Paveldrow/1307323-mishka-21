@@ -9,6 +9,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .about-us__item {
@@ -19,5 +24,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
   }
 }

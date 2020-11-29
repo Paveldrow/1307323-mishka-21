@@ -3,3 +3,20 @@
   padding-bottom: 32px;
   background-color: $background-dark;
 }
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__footer-logo {
+  width: 101px;
+  height: 34px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
