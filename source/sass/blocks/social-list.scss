@@ -7,9 +7,9 @@
   padding-bottom: 27px;
   border-bottom: 1px solid $footer-line;
 
-@media (min-width: $tablet-width) {
-  border: none;
-}
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social-list__item {

@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 457px;
-    background-image: url(../../img/background-reviews-tablet.jpg);
+    background-image: url("../../img/background-reviews-tablet.jpg");
     background-repeat: no-repeat;
   }
 }
@@ -48,6 +48,7 @@
 
 .reviews__button-control {
   display: flex;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
