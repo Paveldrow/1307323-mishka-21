@@ -33,9 +33,11 @@
 }
 
 .contacts__contacts-item {
-  display: flex;
-  width: 334px;
-  margin: 0;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 334px;
+    margin: 0;
+  }
 }
 
 .contacts__contacts-point {
