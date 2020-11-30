@@ -12,6 +12,10 @@
     background-position: center;
     height: 100%;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 560px;
+  }
 }
 
 .page-title__title {

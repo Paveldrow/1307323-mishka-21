@@ -59,6 +59,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 457px;
+    background-image: url("../../img/map-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -67,6 +68,7 @@
     right: 0;
     width: 527px;
     height: auto;
+    background-image: url("../../img/map-desktop.png");
   }
 }
 
