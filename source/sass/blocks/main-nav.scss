@@ -1,8 +1,18 @@
+.main-nav {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .main-nav__toggle {
+  display: none;
   width: 20px;
   height: 14px;
   background-color: transparent;
-  background-image: url("../../img/icon-menu-toggle.svg");
+  background-image: url("../img/icon-menu-toggle.svg");
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -10,16 +20,10 @@
   }
 }
 
-.main-nav {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .main-nav__list {
-  display: none;
+  display: block;
   list-style: none;
+  text-align: center;
   margin: 0;
   padding: 0;
 

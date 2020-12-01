@@ -1,15 +1,19 @@
 .contacts {
   position: relative;
-  padding-bottom: 39px;
+  box-sizing: border-box;
+  padding-top: 38px;
+  padding-bottom: 105px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 68px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
     min-height: 633px;
+    padding-top: 71px;
     margin: 0 auto;
   }
 }
@@ -20,23 +24,54 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 35px;
+  }
 }
 
 .contacts__contacts-info {
+  margin-bottom: 62px;
+
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-bottom: 85px;
   }
 }
 
 .contacts__contacts-item {
+  margin: 0;
+  margin-bottom: 42px;
+  font-size: 14px;
+  line-height: 30px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     width: 334px;
     margin: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -54,14 +89,14 @@
   width: 100%;
   min-height: 454px;
   margin-bottom: 42px;
-  background-image: url("../../img/map-mobile.png");
+  background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   background-color: $dark;
   background-position: center;
 
   @media (min-width: $tablet-width) {
     min-height: 457px;
-    background-image: url("../../img/map-tablet.png");
+    background-image: url("../img/map-tablet.png");
   }
 
   @media (min-width: $desktop-width) {
@@ -70,10 +105,14 @@
     right: 0;
     width: 527px;
     height: auto;
-    background-image: url("../../img/map-desktop.png");
+    background-image: url("../img/map-desktop.png");
   }
 }
 
 .contacts__feedback {
-  margin: 0 auto;
+  @media (max-width: 1149px) {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }

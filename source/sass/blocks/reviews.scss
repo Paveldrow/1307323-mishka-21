@@ -1,24 +1,52 @@
 .reviews {
   position: relative;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     min-height: 457px;
-    background-image: url("../../img/background-reviews-tablet.jpg");
+    padding-top: 82px;
+    padding-bottom: 82px;
+    background-image: url("../img/background-reviews-tablet.jpg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 79px;
+    padding-bottom: 85px;
   }
 }
 
 .reviews__title {
   margin: 0;
-  margin-top: 50px;
   margin-bottom: 15px;
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .reviews__item {
   margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 96px;
+  }
 }
 
 .reviews__text {
@@ -28,22 +56,45 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-name {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .reviews__author-email {
   margin: 0;
-  margin-bottom: 30px;
   color: $dark;
   font-weight: normal;
   font-size: 17px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .reviews__button-control {
@@ -51,7 +102,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 0;
+    bottom: 110px;
     right: 0;
   }
 }
@@ -80,9 +131,15 @@
 }
 
 .reviews__add-review {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 0;
+    top: 82px;
     right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 79px;
   }
 }
