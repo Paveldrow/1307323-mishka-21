@@ -2,12 +2,19 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .categories__item {
   padding-top: 24px;
+  padding-right: 30px;
   padding-bottom: 31px;
   padding-left: 30px;
+  flex-grow: 1;
 
   &:nth-child(odd) {
     background-color: $special-first-color;
@@ -23,4 +30,9 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

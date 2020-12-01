@@ -3,43 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Мишка - Каталог</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
+      <nav class="main-nav">
+      <a href ="index.html" page-header__logo">
         <img
           src="img/logo-mobile.svg"
           width="86"
           height="35"
-          alt="Магазин Mishka"
+          alt="Логотип Магазина Mishka"
         />
       </a>
-      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Каталог товаров</a>
+          <ul class="main-nav__list main-nav__site-list">
+            <li class="main-nav__item\">
+              <a
+                class="main-nav__link"
+                >Каталог товаров</a
+              >
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
-          <div class="main-nav__item">
-            <a class="main-nav__link main-nav__link--searching" href="#"
+          <div class="main-nav__list main-nav__user-list">
+            <a
+              class="main-nav__link main-nav__link--searching"
+              href="#"
               >Поиск по сайту</a
             >
-          </div>
-          <div class="main-nav__item">
-            <a class="main-nav__link main-nav__link--cart" href="#"
+            <a
+              class="main-nav__link main-nav__link--cart"
+              href="#"
               >Корзина: пока пуста</a
             >
           </div>
-        </div>
+          <div class="main-nav__list main-nav__stock-list">
+            <a class="main-nav__stock-link" href="#">Новые поступления</a>
+            <a class="main-nav__stock-link" href="#">Распродажа</a>
+          </div>
+        <p class="main-nav__note">Бесплатная доставка по России</p>
       </nav>
     </header>
     <main>
@@ -93,7 +101,7 @@
               src="img/product-big-basket-mobile.jpg"
               width="260"
               height="195"
-              alt="Фото товара Большая корзинкадля игрушек"
+              alt="Фото товара Большая корзинка для игрушек"
             />
             <div class="product__caption">
               <h3 class="product__title">Большая корзинка для игрушек</h3>

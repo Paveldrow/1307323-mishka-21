@@ -13,4 +13,8 @@
   background-color: $white;
   text-transform: uppercase;
   border: 2px solid $dark;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }

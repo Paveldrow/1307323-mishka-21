@@ -1,22 +1,56 @@
 .page-title {
   box-sizing: border-box;
-  background-color: $background-dark;
+  min-height: 177px;
   margin-bottom: 0;
   padding-top: 73px;
-  padding-bottom: 74px;
+  background-color: $background-dark;
 
   &--index {
     min-height: 283px;
-    background-image: url("../../img/background-index.jpg");
+    background-image: url("../img/background-index.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
+    height: 100%;
+
+    @media (min-width: $tablet-width) {
+      min-height: 626px;
+      padding-top: 154px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 626px;
+      padding-top: 100px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 226px;
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 255px;
+    padding-top: 101px;
   }
 }
 
 .page-title__title {
+  width: 260px;
   text-align: center;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  margin: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

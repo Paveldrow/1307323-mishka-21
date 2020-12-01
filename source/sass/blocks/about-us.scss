@@ -1,14 +1,46 @@
+.about-us {
+  box-sizing: border-box;
+  padding-top: 31px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60;
+    padding-bottom: 82px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 68;
+    padding-bottom: 90px;
+  }
+}
+
 .about-us__title {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
   margin-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .about-us__item {
@@ -19,5 +51,14 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 }
