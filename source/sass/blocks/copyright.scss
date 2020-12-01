@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright__text {

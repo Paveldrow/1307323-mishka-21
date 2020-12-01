@@ -1,8 +1,9 @@
 .page-title {
   box-sizing: border-box;
-  background-color: $background-dark;
+  min-height: 177px;
   margin-bottom: 0;
   padding-top: 73px;
+  background-color: $background-dark;
 
   &--index {
     min-height: 283px;
@@ -10,16 +11,26 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
+
+    @media (min-width: $tablet-width) {
+      min-height: 626px;
+      padding-top: 154px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 626px;
+      padding-top: 100px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 626px;
-    padding-top: 154px;
+    min-height: 226px;
+    padding-top: 100px;
   }
 
-  @media (min-width: $tablet-width) {
-    min-height: 626px;
-    padding-top: 157px;
+  @media (min-width: $desktop-width) {
+    min-height: 255px;
+    padding-top: 101px;
   }
 }
 

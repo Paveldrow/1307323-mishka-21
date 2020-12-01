@@ -8,6 +8,7 @@
   border-bottom: 1px solid $footer-line;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
     border: none;
   }
 }
