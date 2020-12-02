@@ -2,6 +2,15 @@
   padding-top: 22px;
   padding-bottom: 34px;
   border-top: 1px solid $table-line;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 682px 1fr;
+    grid-template-rows: min-content;
+  }
 }
 
 .production__title {
@@ -13,8 +22,11 @@
 }
 
 .production__video {
+  grid-row-start: 1;
+  grid-row-end: 4;
   cursor: pointer;
   margin-bottom: 35px;
+  order: -1;
 }
 
 .production__text {
@@ -22,4 +34,13 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+}
+
+.production__button {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: auto;
+    margin-right: 42px;
+    margin-left: 42px;
+  }
 }
