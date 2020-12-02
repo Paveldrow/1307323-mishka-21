@@ -8,8 +8,10 @@
 
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav">
-        <a class="page-header__logo" href="index.html">
+      <nav class="main-nav container">
+        <div class="page-header__wrapper">
+        <a class="page-header__logo"
+        href="index.html">
           <img
             src="img/logo-mobile.svg"
             width="86"
@@ -20,6 +22,7 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+      </div>
         <ul class="main-nav__list main-nav__site-list">
           <li class="main-nav__item\">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -49,17 +52,18 @@
       </div>
       <section class="form">
         <h2 class="visually-hidden">Форма заказа</h2>
-        <p class="form__title">
+        <p class="form__title container">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую
           форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter__field">
-            <legend class="filter__title">Тип</legend>
+            <div class="filter__wrapper container">
+            <h3 class="filter__title">Тип</h3>
             <ul class="filter__list">
               <li class="filter__item">
                 <input
-                  class="filter__input filter__input-radio"
+                  class="visually-hidden filter__input filter__input-radio"
                   id="accessory"
                   type="radio"
                   name="type-product"
@@ -71,7 +75,7 @@
               </li>
               <li class="filter__item">
                 <input
-                  class="filter__input filter__input-radio"
+                  class="visually-hidden filter__input filter__input-radio"
                   id="toy"
                   type="radio"
                   name="type-product"
@@ -80,13 +84,15 @@
                 <label class="filter__label" for="toy">Детская игрушка</label>
               </li>
             </ul>
+          </div>
           </fieldset>
           <fieldset class="filter__field">
-            <legend class="filter__title">Цвет</legend>
-            <ul class="filter__list">
+            <div class="filter__wrapper container">
+            <h3 class="filter__title">Цвет</h3>
+            <ul class="filter__list filter__list--color">
               <li class="filter__item">
                 <input
-                  class="filter__input filter__input-checkbox"
+                  class="visually-hidden filter__input filter__input-checkbox"
                   id="color-white"
                   type="checkbox"
                   name="white"
@@ -95,7 +101,7 @@
               </li>
               <li class="filter__item">
                 <input
-                  class="filter__input filter-__nput-checkbox"
+                  class="visually-hidden filter__input filter__input-checkbox"
                   id="color-gray"
                   type="checkbox"
                   name="gray"
@@ -104,7 +110,7 @@
               </li>
               <li class="filter__item">
                 <input
-                  class="filter__input filter__input-checkbox"
+                  class="visually-hidden filter__input filter__input-checkbox"
                   id="color-tiffany"
                   type="checkbox"
                   name="tiffany"
@@ -114,7 +120,7 @@
               </li>
               <li class="filter__item">
                 <input
-                  class="filter__input filter__input-checkbox"
+                  class="visually-hidden filter__input filter__input-checkbox"
                   id="color-black"
                   type="checkbox"
                   name="black"
@@ -122,7 +128,7 @@
               </li>
               <li class="filter__item">
                 <input
-                  class="filter__input filter__input-checkbox"
+                  class="visually-hidden filter__input filter__input-checkbox"
                   id="color-pink"
                   type="checkbox"
                   name="pink"
@@ -130,7 +136,7 @@
               </li>
               <li class="filter__item">
                 <input
-                  class="filter__input filter__input-checkbox"
+                  class="visually-hidden filter__input filter__input-checkbox"
                   id="color-orange"
                   type="checkbox"
                   name="orange"
@@ -139,10 +145,12 @@
                 >
               </li>
             </ul>
+            </div>
           </fieldset>
           <fieldset class="filter__field">
-            <legend class="filter__title">Фио</legend>
-            <ul class="filter__list">
+            <div class="filter__wrapper container">
+            <h3 class="filter__title">Фио</h3>
+            <ul class="filter__list-personal">
               <li class="filter__item">
                 <label class="filter__label" for="name-field">Имя:</label>
                 <input
@@ -154,7 +162,7 @@
                   required
                 />
               </li>
-              <li class="filter-item">
+              <li class="filter__item">
                 <label class="filter__label" for="surname-field"
                   >Фамилия:</label
                 >
@@ -180,19 +188,20 @@
                 />
               </li>
             </ul>
+            </div>
           </fieldset>
           <ul class="filter__field">
-            <li class="filter__item">
+            <li class="filter__wrapper container">
               <label class="filter__title" for="phone-field">Тел</label>
               <input
                 class="filter__input-personal filter__input-personal-phone"
                 type="tel"
                 name="phone"
                 id="phone-field"
-                placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ"
               />
             </li>
-            <li class="filter__item">
+            <li class="filter__wrapper container">
               <label class="filter__title" for="email-field">E-mail</label>
               <input
                 class="filter__input-personal filter__input-personal--email"
@@ -204,6 +213,7 @@
             </li>
           </ul>
           <div class="filter__field filter__field--last">
+            <div class="filter__wrapper container">
             <label class="filter__title" for="comment-field">Доп</label>
             <textarea
               class="filter__textarea"
@@ -211,38 +221,49 @@
               placeholder="Опишите все ваши пожелания к заказу"
             ></textarea>
           </div>
+          </div>
+          <div class="filter__checkout container">
           <p class="filter__discription">*Поля обязательны для заполнения</p>
           <button class="filter__button button" type="submit">Отправить</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link-instagram" href="#"
-            ><span class="visually-hidden">instagram</span></a
-          >
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link-facebook" href="#"
-            ><span class="visually-hidden">facebook</span></a
-          >
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link-twitter" href="#"
-            ><span class="visually-hidden">twitter</span></a
-          >
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright-link" href="#"
-          ><img
-            src="img/htmlacademy.svg"
-            width="27"
-            height="34"
-            alt="Логотип Html Academy"
-        /></a>
+      <div class="page-footer__wrapper container">
+        <img
+          class="page-footer__footer-logo"
+          src="img/logo-footer.svg"
+          width="101"
+          height="34"
+          alt="Логотип Магазина Mishka"
+        />
+        <ul class="page-footer__social social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link-instagram" href="#"
+              ><span class="visually-hidden">instagram</span></a
+            >
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link-facebook" href="#"
+              ><span class="visually-hidden">facebook</span></a
+            >
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link-twitter" href="#"
+              ><span class="visually-hidden">twitter</span></a
+            >
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright-link" href="#"
+            ><img
+              src="img/htmlacademy.svg"
+              width="27"
+              height="34"
+              alt="Логотип Html Academy"
+          /></a>
+        </div>
       </div>
     </footer>
   </body>
