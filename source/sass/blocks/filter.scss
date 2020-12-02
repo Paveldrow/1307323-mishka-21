@@ -72,7 +72,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
 .filter__item {
@@ -175,7 +174,7 @@
 }
 
 .filter__checkout {
-box-sizing: border-box;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -184,7 +183,7 @@ box-sizing: border-box;
 
   @media (min-width: $desktop-width) {
     padding-left: 40px;
-}
+  }
 }
 
 .filter__discription {
