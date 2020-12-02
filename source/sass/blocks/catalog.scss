@@ -1,5 +1,16 @@
 .catalog {
   padding-top: 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111;
+    margin-bottom: 57px;
+  }
 }
 
 .catalog__list {
@@ -11,14 +22,15 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
   }
 }
 
 .catalog__item {
   margin-bottom: 30px;
-}
 
-.product__price-block {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    min-height: 659px;
+    margin: 0;
+  }
 }
