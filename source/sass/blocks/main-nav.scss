@@ -1,18 +1,36 @@
 .main-nav {
   position: relative;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 668px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
   }
 }
 
+.main-nav__logo-wrapper {
+  position: relative;
+  padding: 22px 30px;
+}
+
 .main-nav__toggle {
-  display: none;
+  position: absolute;
+  top: 29px;
+  right: 30px;
+  z-index: 2;
+  display: block;
+  box-sizing: border-box;
   width: 20px;
   height: 14px;
+  cursor: pointer;
   background-color: transparent;
-  background-image: url("../img/icon-menu-toggle.svg");
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -20,10 +38,46 @@
   }
 }
 
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $black;
+    box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 21px;
+  height: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    width: 27px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
 .main-nav__list {
   display: block;
   list-style: none;
-  text-align: center;
   margin: 0;
   padding: 0;
 
@@ -32,14 +86,50 @@
   }
 }
 
+.main-nav__item {
+  text-align: left;
+  border-top: 1px solid $header-border;
+}
+
 .main-nav__link {
+  position: relative;
   display: block;
+  box-sizing: border-box;
+  width: 260px;
   padding-top: 28px;
   padding-bottom: 26px;
+  padding-left: 46px;
+  margin: 0 auto;
   color: $black;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
+  &--searching {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 0;
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-search.svg");
+    }
+  }
+
+  &--cart {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 0;
+      display: block;
+      width: 21px;
+      height: 18px;
+      background-image: url("../img/icon-cart.svg");
+    }
+  }
 }
 
 .main-nav__site-list {

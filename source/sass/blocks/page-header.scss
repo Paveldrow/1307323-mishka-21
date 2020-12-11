@@ -6,11 +6,8 @@
   border-bottom: 1px solid $header-border;
 }
 
-.page-header__wrapper {
-  text-align: center;
-}
-
 .page-header__logo {
+  display: block;
   height: 35px;
 
   @media (min-width: $tablet-width) {
@@ -20,4 +17,9 @@
   @media (min-width: $desktop-width) {
     height: 72px;
   }
+}
+
+.page-header__logo img {
+  width: 86px;
+  height: 35px;
 }

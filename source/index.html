@@ -9,8 +9,8 @@
 
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav container">
-        <div class="page-header__wrapper">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav__logo-wrapper">
           <a class="page-header__logo">
             <img
               src="img/logo-mobile.svg"
@@ -22,22 +22,24 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-        </div>
+          </div>
         <ul class="main-nav__list main-nav__site-list">
-          <li class="main-nav__item\">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <div class="main-nav__list main-nav__user-list">
+        <ul class="main-nav__list main-nav__user-list">
+          <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--searching" href="#"
             >Поиск по сайту</a
-          >
+          ></li>
+          <li class="main-nav__item">
           <a class="main-nav__link main-nav__link--cart" href="#"
             >Корзина: пока пуста</a
-          >
+          ></li>
         </div>
         <div class="main-nav__list main-nav__stock-list">
           <a class="main-nav__stock-link" href="#">Новые поступления</a>

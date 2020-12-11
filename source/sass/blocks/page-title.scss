@@ -3,7 +3,7 @@
   min-height: 177px;
   margin-bottom: 0;
   padding-top: 73px;
-  background-color: $background-dark;
+  background-color: $background-page-title;
 
   &--index {
     min-height: 283px;
@@ -15,6 +15,7 @@
     @media (min-width: $tablet-width) {
       min-height: 560px;
       padding-top: 154px;
+      background-image: url("../img/background-index-tablet.jpg");
     }
 
     @media (min-width: $desktop-width) {
