@@ -4,8 +4,8 @@
   text-align: center;
   box-sizing: border-box;
   width: 260px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   color: $dark;
   font-weight: bold;
   font-size: 18px;
@@ -16,5 +16,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
+    width: 292px;
   }
 }

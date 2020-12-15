@@ -1,6 +1,5 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
   min-height: 79px;
   background-color: $white;
   border-bottom: 1px solid $header-border;
@@ -22,4 +21,14 @@
 .page-header__logo img {
   width: 86px;
   height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
 }

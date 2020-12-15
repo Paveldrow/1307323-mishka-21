@@ -8,9 +8,9 @@
 
   <body class="page__body">
     <header class="page-header">
-      <nav class="main-nav container">
-        <div class="page-header__wrapper">
-          <a href="index.html" class="page-header__logo">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <div class="main-nav__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
             <img
               src="img/logo-mobile.svg"
               width="86"
@@ -23,21 +23,36 @@
           </button>
         </div>
         <ul class="main-nav__list main-nav__site-list">
-          <li class="main-nav__item\">
-            <a class="main-nav__link">Каталог товаров</a>
+          <li class="main-nav__item main-nav__item--site-item">
+            <a
+              class="main-nav__link main-nav__link--site-link"
+              >Каталог товаров</a
+            >
           </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          <li class="main-nav__item main-nav__item--site-item">
+            <a class="main-nav__link main-nav__link--site-link" href="form.html"
+              >Вязание на заказ</a
+            >
           </li>
         </ul>
-        <div class="main-nav__list main-nav__user-list">
-          <a class="main-nav__link main-nav__link--searching" href="#"
-            >Поиск по сайту</a
+        <ul class="main-nav__list main-nav__user-list">
+          <li class="main-nav__item main-nav__item--user-item">
+            <a
+              class="main-nav__link main-nav__link--user-link main-nav__link--searching"
+              href="#"
+              ><span class="main-nav__searching">Поиск по сайту </span></a
+            >
+          </li>
+          <li
+            class="main-nav__item main-nav__item--user-item main-nav__item--cart"
           >
-          <a class="main-nav__link main-nav__link--cart" href="#"
-            >Корзина: пока пуста</a
-          >
-        </div>
+            <a
+              class="main-nav__link main-nav__link--user-link main-nav__link--cart"
+              href="#"
+              >Корзина: пока пуста</a
+            >
+          </li>
+        </ul>
         <div class="main-nav__list main-nav__stock-list">
           <a class="main-nav__stock-link" href="#">Новые поступления</a>
           <a class="main-nav__stock-link" href="#">Распродажа</a>
@@ -159,7 +174,7 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright-link" href="#"
+          <a class="copyright__link" href="#"
             ><img
               src="img/htmlacademy.svg"
               width="27"

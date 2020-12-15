@@ -7,11 +7,14 @@
 }
 
 .product-table__row {
-  padding-left: 30px;
   border-bottom: 1px solid $table-line;
 }
 
 .product-table__cell {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+
+  &:first-child {
+    width: 94px;
+  }
 }

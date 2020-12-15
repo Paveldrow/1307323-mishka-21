@@ -1,11 +1,9 @@
 .social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 27px;
-  border-bottom: 1px solid $footer-line;
+
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
