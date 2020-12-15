@@ -1,16 +1,18 @@
 .about-us {
   box-sizing: border-box;
   padding-top: 31px;
-  padding-bottom: 31px;
+  padding-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60;
-    padding-bottom: 82px;
+    box-sizing: border-box;
+    min-height: 639px;
+    padding-top: 56px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-top: 68;
-    padding-bottom: 90px;
+  @media (min-width: $desktop-width) {
+    padding-top: 68px;
+    padding-bottom: 39px;
+    padding-left: 175px;
   }
 }
 
@@ -19,16 +21,24 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 73px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
     font-size: 43px;
     line-height: 50px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.about-us__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
@@ -38,27 +48,109 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    width: 351px;
   }
 }
 
 .about-us__item {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 83px;
+  padding-top: 55px;
+  margin-bottom: 28px;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  margin-bottom: 73px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   @media (min-width: $tablet-width) {
+    padding-top: 57px;
+    margin-bottom: 53px;
     font-size: 20px;
     line-height: 22px;
+  }
 
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    width: 351px;
+    margin-bottom: 52px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+
+  &--ecology {
+    &::before {
+      content: url("../img/icon-ecology.svg");
+      left: 7px;
+
+      @media (min-width: $tablet-width) {
+        left: 8px;
+      }
+    }
+  }
+
+  &--price {
+    &::before {
+      content: url("../img/icon-price.svg");
+      top: 1px;
+
+      @media (min-width: $tablet-width) {
+        top: 3px;
+        left: 1px;
+      }
+    }
+  }
+
+  &--like {
+    &::before {
+      content: url("../img/icon-like.svg");
+      left: 7px;
+      top: 6px;
+
+      @media (min-width: $tablet-width) {
+        top: 9px;
+        left: 8px;
+      }
+    }
+  }
+
+  &--warm {
+    &::before {
+      content: url("../img/icon-warm.svg");
+      top: 3px;
+      left: 3px;
+
+      @media (min-width: $tablet-width) {
+        top: 4px;
+      }
+    }
+  }
+
+  &--national {
+    &::before {
+      content: url("../img/icon-national.svg");
+      top: 4px;
+      left: -5px;
+
+      @media (min-width: $tablet-width) {
+        top: 6px;
+        left: -6px;
+      }
+    }
+  }
+
+  &--present {
+    &::before {
+      content: url("../img/icon-present.svg");
+      top: 2px;
+      left: 3px;
+
+      @media (min-width: $tablet-width) {
+        top: 5px;
+      }
     }
   }
 }
