@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>HTML Academy: Мишка - Форма заказа</title>
     <link href="css/style.css" rel="stylesheet" />
@@ -74,152 +75,174 @@
         <form class="filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter__field">
             <div class="filter__wrapper container">
-            <h3 class="filter__title">Тип</h3>
-            <ul class="filter__list">
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-radio"
-                  id="accessory"
-                  type="radio"
-                  name="type-product"
-                  value="accessory"
-                  checked
-                /><label class="filter__label" for="accessory"
-                  >Аксессуар для интерьера</label
-                >
-              </li>
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-radio"
-                  id="toy"
-                  type="radio"
-                  name="type-product"
-                  value="toy"
-                />
-                <label class="filter__label" for="toy">Детская игрушка</label>
-              </li>
-            </ul>
-          </div>
-          </fieldset>
-          <fieldset class="filter__field">
-            <div class="filter__wrapper container">
-            <h3 class="filter__title">Цвет</h3>
-            <ul class="filter__list filter__list--color">
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-checkbox"
-                  id="color-white"
-                  type="checkbox"
-                  name="white"
-                  checked
-                /><label class="filter__label" for="color-white">Белый</label>
-              </li>
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-checkbox"
-                  id="color-gray"
-                  type="checkbox"
-                  name="gray"
-                  checked
-                /><label class="filter__label" for="color-gray">Серый</label>
-              </li>
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-checkbox"
-                  id="color-tiffany"
-                  type="checkbox"
-                  name="tiffany"
-                /><label class="filter__label" for="color-tiffany"
-                  >«Тиффани»</label
-                >
-              </li>
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-checkbox"
-                  id="color-black"
-                  type="checkbox"
-                  name="black"
-                /><label class="filter__label" for="color-black">Черный</label>
-              </li>
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-checkbox"
-                  id="color-pink"
-                  type="checkbox"
-                  name="pink"
-                /><label class="filter__label" for="color-pink">Розовый</label>
-              </li>
-              <li class="filter__item">
-                <input
-                  class="visually-hidden filter__input filter__input-checkbox"
-                  id="color-orange"
-                  type="checkbox"
-                  name="orange"
-                /><label class="filter__label" for="color-orange"
-                  >Оранжевый</label
-                >
-              </li>
-            </ul>
+              <h3 class="filter__title">Тип</h3>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input
+                    class="visually-hidden filter__input filter__input-radio"
+                    id="accessory"
+                    type="radio"
+                    name="type-product"
+                    value="accessory"
+                    checked
+                  /><label class="filter__label" for="accessory"
+                    >Аксессуар для интерьера</label
+                  >
+                </li>
+                <li class="filter__item">
+                  <input
+                    class="visually-hidden filter__input filter__input-radio"
+                    id="toy"
+                    type="radio"
+                    name="type-product"
+                    value="toy"
+                  />
+                  <label class="filter__label" for="toy">Детская игрушка</label>
+                </li>
+              </ul>
             </div>
           </fieldset>
-          <fieldset class="filter__field">
-            <div class="filter__wrapper container">
-            <h3 class="filter__title">Фио</h3>
-            <ul class="filter__list-personal">
-              <li class="filter__item">
-                <label class="filter__label" for="name-field">Имя:</label>
-                <input
-                  class="filter__input-personal"
-                  type="text"
-                  name="name"
-                  id="name-field"
-                  placeholder="Введите ваше имя*"
-                  required
-                />
-              </li>
-              <li class="filter__item">
-                <label class="filter__label" for="surname-field"
-                  >Фамилия:</label
-                >
-                <input
-                  class="filter__input-personal"
-                  type="text"
-                  name="surname"
-                  id="surname-field"
-                  placeholder="Укажите фамилию*"
-                  required
-                />
-              </li>
-              <li class="filter__item">
-                <label class="filter__label" for="patronymic-field"
-                  >Отчество:</label
-                >
-                <input
-                  class="filter__input-personal"
-                  type="text"
-                  name="patronymic"
-                  id="patronymic-field"
-                  placeholder="Отчество, если желаете"
-                />
-              </li>
-            </ul>
+          <fieldset class="filter__field filter__field--color">
+            <div class="filter__wrapper filter__wrapper--color container">
+              <h3 class="filter__title filter__title--color">Цвет</h3>
+              <ul class="filter__list filter__list--color">
+                <li class="filter__item filter__item--color">
+                  <input
+                    class="visually-hidden filter__input filter__input-checkbox"
+                    id="color-white"
+                    type="checkbox"
+                    name="white"
+                    checked
+                  /><label class="filter__label filter__label--color" for="color-white">Белый</label>
+                </li>
+                <li class="filter__item filter__item--color">
+                  <input
+                    class="visually-hidden filter__input filter__input-checkbox"
+                    id="color-gray"
+                    type="checkbox"
+                    name="gray"
+                    checked
+                  /><label class="filter__label filter__label--color" for="color-gray">Серый</label>
+                </li>
+                <li class="filter__item filter__item--color">
+                  <input
+                    class="visually-hidden filter__input filter__input-checkbox"
+                    id="color-tiffany"
+                    type="checkbox"
+                    name="tiffany"
+                  /><label class="filter__label filter__label--color" for="color-tiffany"
+                    >«Тиффани»</label
+                  >
+                </li>
+                <li class="filter__item filter__item--color">
+                  <input
+                    class="visually-hidden filter__input filter__input-checkbox"
+                    id="color-black"
+                    type="checkbox"
+                    name="black"
+                  /><label class="filter__label filter__label--color" for="color-black"
+                    >Черный</label
+                  >
+                </li>
+                <li class="filter__item filter__item--color">
+                  <input
+                    class="visually-hidden filter__input filter__input-checkbox"
+                    id="color-pink"
+                    type="checkbox"
+                    name="pink"
+                  /><label class="filter__label filter__label--color" for="color-pink"
+                    >Розовый</label
+                  >
+                </li>
+                <li class="filter__item filter__item--color">
+                  <input
+                    class="visually-hidden filter__input filter__input-checkbox"
+                    id="color-orange"
+                    type="checkbox"
+                    name="orange"
+                  /><label class="filter__label filter__label--color" for="color-orange"
+                    >Оранжевый</label
+                  >
+                </li>
+              </ul>
             </div>
           </fieldset>
-          <ul class="filter__field">
+          <fieldset class="filter__field filter__field--personal">
+            <div class="filter__wrapper container">
+              <h3 class="filter__title filter__title--personal">Фио</h3>
+              <ul class="filter__list-personal">
+                <li class="filter__item filter__item--personal">
+                  <label
+                    class="filter__label filter__label--personal"
+                    for="name-field"
+                    >Имя:</label
+                  >
+                  <input
+                    class="filter__input-personal"
+                    type="text"
+                    name="name"
+                    id="name-field"
+                    placeholder="Введите ваше имя*"
+                    required
+                  />
+                </li>
+                <li class="filter__item filter__item--personal">
+                  <label
+                    class="filter__label filter__label--personal"
+                    for="surname-field"
+                    >Фамилия:</label
+                  >
+                  <input
+                    class="filter__input-personal"
+                    type="text"
+                    name="surname"
+                    id="surname-field"
+                    placeholder="Укажите фамилию*"
+                    required
+                  />
+                </li>
+                <li class="filter__item filter__item--personal">
+                  <label
+                    class="filter__label filter__label--personal"
+                    for="patronymic-field"
+                    >Отчество:</label
+                  >
+                  <input
+                    class="filter__input-personal"
+                    type="text"
+                    name="patronymic"
+                    id="patronymic-field"
+                    placeholder="Отчество, если желаете"
+                  />
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <ul class="filter__field filter__field--contacts">
             <li class="filter__wrapper container">
-              <label class="filter__title" for="phone-field">Тел</label>
+              <label
+                class="filter__title filter__title--contacts"
+                for="phone-field"
+                >Тел</label
+              >
               <input
-                class="filter__input-personal filter__input-personal-phone"
+                class="filter__input-personal filter__input-personal--contacts filter__input-personal--phone"
                 type="tel"
                 name="phone"
                 id="phone-field"
-                placeholder="+7 ХХХ ХХХ ХХ ХХ"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*"
               />
             </li>
             <li class="filter__wrapper container">
-              <label class="filter__title" for="email-field">E-mail</label>
+              <label
+                class="filter__title filter__title--contacts"
+                for="email-field"
+                >E-mail</label
+              >
               <input
-                class="filter__input-personal filter__input-personal--email"
+                class="filter__input-personal
+                filter__input-personal--contacts
+                filter__input-personal--email"
                 type="email"
                 name="email"
                 id="email-field"
@@ -227,19 +250,21 @@
               />
             </li>
           </ul>
-          <div class="filter__field filter__field--last">
+          <div class="filter__field filter__field--textarea">
             <div class="filter__wrapper container">
-            <label class="filter__title" for="comment-field">Доп</label>
-            <textarea
-              class="filter__textarea"
-              id="comment-field"
-              placeholder="Опишите все ваши пожелания к заказу"
-            ></textarea>
-          </div>
+              <label class="filter__title filter__title--textarea" for="comment-field">Доп</label>
+              <textarea
+                class="filter__textarea"
+                id="comment-field"
+                placeholder="Опишите все ваши пожелания к заказу"
+              ></textarea>
+            </div>
           </div>
           <div class="filter__checkout container">
-          <p class="filter__discription">*Поля обязательны для заполнения</p>
-          <button class="filter__button button" type="submit">Отправить</button>
+            <p class="filter__discription">*Поля обязательны для заполнения</p>
+            <button class="filter__button button" type="submit">
+              Отправить заказ
+            </button>
           </div>
         </form>
       </section>

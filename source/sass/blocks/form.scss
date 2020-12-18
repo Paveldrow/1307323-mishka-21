@@ -1,9 +1,10 @@
 .form {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 17px;
+  padding-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 54px;
+    padding-top: 67px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +22,7 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 63px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
