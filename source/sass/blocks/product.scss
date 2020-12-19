@@ -28,9 +28,9 @@
 
 .product__caption {
   box-sizing: border-box;
-  padding-top: 29px;
-  padding-bottom: 27px;
-  padding-left: 28px;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  padding-left: 27px;
   padding-right: 28px;
   border: 1px solid $table-line;
 
@@ -38,20 +38,24 @@
     display: flex;
     flex-direction: column;
     width: 335px;
+    padding-left: 33px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    padding-left: 28px;
     width: 316px;
   }
 }
 
 .product__title {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  vertical-align: bottom;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -60,8 +64,7 @@
 
 .product__parameters {
   margin: 0;
-  margin-bottom: 18px;
-  font-weight: normal;
+  margin-bottom: 17px;
   font-size: 13px;
   line-height: 30px;
   color: $dark;
@@ -83,6 +86,7 @@
   border-top: 1px solid $table-line;
 
   @media (min-width: $tablet-width) {
+    padding-top: 25px;
     margin-top: auto;
   }
 
@@ -107,6 +111,7 @@
   width: 20px;
   height: 19px;
   margin: 0;
+  margin-right: 3px;
   background-image: url("../img/icon-cart.svg");
   color: $special-first-color;
 }
