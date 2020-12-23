@@ -141,10 +141,15 @@
     position: absolute;
     top: 99px;
     right: 0;
+    width: 334px;
+    height: 404px;
   }
 
   @media (min-width: $desktop-width) {
+    z-index: -1;
     top: 0;
+    width: 525px;
+    height: 636px;
   }
 }
 
