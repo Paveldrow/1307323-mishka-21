@@ -76,12 +76,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-poster-mobile@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     order: -1;
     width: 668px;
     height: 455px;
     margin-bottom: 41px;
     background-image: url("../img/video-poster-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-poster-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +99,11 @@
     grid-row-end: 4;
     margin: 0;
     margin-bottom: 0;
+    background-image: url("../img/video-poster-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-poster-desktop@2x.jpg");
+    }
   }
 }
 
