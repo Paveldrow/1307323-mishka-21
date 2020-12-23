@@ -432,6 +432,7 @@
   padding: 17px;
   resize: none;
   border: 2px solid $dark;
+  border-radius: 0;
   font-family: inherit;
 
   @media (min-width: $tablet-width) {
