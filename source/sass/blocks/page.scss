@@ -1,5 +1,4 @@
 .page {
-  display: grid;
   grid-template-rows: min-content 1fr min-content;
   height: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -9,6 +8,8 @@
 }
 
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   min-height: 100%;
   margin: 0;
   background-color: $white;
