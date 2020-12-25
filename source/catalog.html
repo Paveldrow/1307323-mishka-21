@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Мишка - Каталог</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body class="page__body">
@@ -25,8 +25,7 @@
         </div>
         <ul class="main-nav__list main-nav__site-list">
           <li class="main-nav__item main-nav__item--site-item">
-            <a
-              class="main-nav__link main-nav__link--site-link"
+            <a class="main-nav__link main-nav__link--site-link"
               >Каталог товаров</a
             >
           </li>
@@ -70,15 +69,29 @@
         <ul class="catalog__list">
           <li class="catalog__item product">
             <picture>
-              <source media="min-width: 768px" srcset="img/"
-            <img
-              class="product__image"
-              src="img/product-bunny-mobile.jpg"
-              srcset
-              width="260"
-              height="195"
-              alt="Фото товара Зайчик-попрыгайчик"
-            />
+              <source
+                media="(min-width: 1150px)"
+                srcset="
+                  img/product-bunny-desktop.jpg    1x,
+                  img/product-bunny-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/product-bunny-tablet.jpg    1x,
+                  img/product-bunny-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="product__image"
+                src="img/product-bunny-mobile.jpg 1x"
+                srcset="img/product-bunny-mobile@2x.jpg 2x"
+                width="260"
+                height="195"
+                alt="Фото товара Зайчик-попрыгайчик"
+              />
+            </picture>
             <div class="product__caption">
               <h3 class="product__title">Зайчик-попрыгайчик</h3>
               <p class="product__parameters">Рост 30 см, вес 200 г</p>
@@ -91,13 +104,26 @@
             </div>
           </li>
           <li class="catalog__item product">
+            <picture>
+                <source
+                  media="(min-width: 1150px)"
+                  srcset="
+                    img/product-basket-desktop.jpg 1x,
+                    img/product-basket-desktop@2x.jpg 2x">
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    img/product-basket-tablet.jpg 1x,
+                    img/product-basket-tablet@2x.jpg 2x">
             <img
               class="product__image"
-              src="img/product-basket-mobile.jpg"
+              src="img/product-basket-mobile.jpg 1x"
+              srcset="img/product-basket-mobile@2x.jpg 2x"
               width="260"
               height="195"
               alt="Фото товара Корзинка для белья"
-            />
+            >
+            </picture>
             <div class="product__caption">
               <h3 class="product__title">Корзинка для белья</h3>
               <p class="product__parameters">Диаметр 15 см, высота 10 см</p>
@@ -110,33 +136,41 @@
             </div>
           </li>
           <li class="catalog__item product">
+            <picture>
+              <source
+              media="(min-width: 1150px)"
+              srcset="
+                img/product-big-basket-desktop.jpg 1x,
+                img/product-big-basket-desktop@2x.jpg 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/product-big-basket-tablet.jpg 1x,
+                img/product-big-basket-tablet@2x.jpg 2x">
             <img
               class="product__image"
-              src="img/product-big-basket-mobile.jpg"
+              src="img/product-big-basket-mobile.jpg 1x"
+              srcset="img/product-big-basket-mobile@2x.jpg 2x"
               width="260"
               height="195"
               alt="Фото товара Большая корзинка для игрушек"
             />
             <div class="product__caption">
-              <h3 class="product__title">Большая корзинка<br>для игрушек</h3>
+              <h3 class="product__title">Большая корзинка<br />для игрушек</h3>
               <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
               <div class="product__price-block">
                 <p class="product__price">1 500 руб.</p>
                 <a class="product__button" href="#"
                   ><span class="visually-hidden">Купить</span></a
                 >
-            </div>
+              </div>
             </div>
           </li>
         </ul>
       </section>
       <section class="production container">
         <h2 class="production__title">Процесс производства</h2>
-        <video
-          class="production__video"
-          width="260"
-          height="150"
-        >
+        <video class="production__video" width="260" height="150">
           <source src="video.mp4" type="video/mp4" />
           <source src="video.webm" type="video/webm" />
           <source src="video.ogv" type="video/ogg" />
