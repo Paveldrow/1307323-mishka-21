@@ -125,15 +125,22 @@
   &--user-item {
     @media (min-width: $tablet-width) {
       vertical-align: middle;
+      border-left: 1px solid $header-border;
     }
   }
 
   &--site-item {
+    &:first-child {
+      @media (min-width: $desktop-width) {
+        border-right: 1px solid $header-border;
+      }
+    }
+
     &:last-child .main-nav__link {
       @media (min-width: $desktop-width) {
         padding-right: 0;
         margin-right: 0;
-        border: none;
+        margin-left: 36px;
       }
     }
   }
@@ -153,6 +160,21 @@
   font-size: 17px;
   line-height: 24px;
 
+  &:hover .main-nav__icon,
+  &:focus .main-nav__icon {
+    opacity: 1;
+    fill: $special-first-color;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $link-hover;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: auto;
   }
@@ -163,22 +185,6 @@
       height: 78px;
       padding: 0;
     }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 31px;
-      left: 2px;
-      display: block;
-      width: 18px;
-      height: 18px;
-      background-image: url("../img/icon-search.svg");
-
-      @media (min-width: $tablet-width) {
-        top: 36px;
-        left: 32px;
-      }
-    }
   }
 
   &--cart {
@@ -187,10 +193,6 @@
       position: absolute;
       top: 30px;
       left: 1px;
-      display: block;
-      width: 21px;
-      height: 18px;
-      background-image: url("../img/icon-cart.svg");
 
       @media (min-width: $tablet-width) {
         top: 35px;
@@ -201,7 +203,6 @@
 
   &--user-link {
     @media (min-width: $tablet-width) {
-      border-left: 1px solid $header-border;
       height: 100%;
       padding-top: 35px;
       padding-left: 83px;
@@ -219,25 +220,25 @@
       padding-top: 35px;
       padding-bottom: 30px;
       padding-right: 36px;
-      margin-right: 35px;
-      border-right: 1px solid $header-border;
+      margin-right: 0;
       font-size: 17px;
     }
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
 .main-nav__searching {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-nav__icon {
+  position: absolute;
+  left: 0;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    left: 33px;
   }
 }
 
@@ -273,6 +274,15 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $link-hover;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__note {

@@ -49,7 +49,11 @@
             <a
               class="main-nav__link main-nav__link--user-link main-nav__link--searching"
               href="#"
-              ><span class="main-nav__searching">Поиск по сайту </span></a
+              >
+              <svg class="main-nav__icon" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              <span class="main-nav__searching">Поиск по сайту </span></a
             >
           </li>
           <li
@@ -58,7 +62,11 @@
             <a
               class="main-nav__link main-nav__link--user-link main-nav__link--cart"
               href="#"
-              >Корзина: пока пуста</a
+              >
+              <svg class="main-nav__icon" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+              Корзина: пока пуста</a
             >
           </li>
         </ul>
@@ -117,6 +125,9 @@
               </tr>
             </table>
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/knitted-basket-desktop.webp 1x, img/knitted-basket-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/knitted-basket-tablet.webp 1x, img/knitted-basket-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/knitted-basket-mobile.webp 1x, img/knitted-basket-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/knitted-basket-desktop.jpg 1x, img/knitted-basket-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/knitted-basket-tablet.jpg 1x, img/knitted-basket-tablet@2x.jpg 2x">
               <img
@@ -218,39 +229,46 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <img
-          class="page-footer__footer-logo"
-          src="img/logo-footer.svg"
-          width="101"
-          height="34"
-          alt="Логотип Магазина Mishka"
-        />
+        <a class="page-footer__logo" href="index.html">
+          <svg class="page-footer__logo-icon" width="102" height="34">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
+        </a>
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link-instagram" href="#"
-              ><span class="visually-hidden">instagram</span></a
+              >
+              <svg class="social-list__icon" width="22" height="22">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+              <span class="visually-hidden">instagram</span></a
             >
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link-facebook" href="#"
-              ><span class="visually-hidden">facebook</span></a
+              >
+              <svg class="social-list__icon" width="15" height="28">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+              <span class="visually-hidden">facebook</span></a
             >
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link-twitter" href="#"
-              ><span class="visually-hidden">twitter</span></a
-            >
+              >
+              <svg class="social-list__icon" width="23" height="20">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+              <span class="visually-hidden">twitter</span></a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
+        <div class="copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="#"
-            ><img
-              src="img/htmlacademy.svg"
-              width="27"
-              height="34"
-              alt="Логотип Html Academy"
-          /></a>
+          <a class="copyright__link" href="https://htmlacademy.ru"
+            ><svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

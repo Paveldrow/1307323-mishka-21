@@ -9,6 +9,15 @@
   display: block;
   height: 35px;
 
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     height: 46px;
   }

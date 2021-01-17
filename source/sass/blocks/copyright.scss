@@ -20,4 +20,16 @@
 .copyright__link {
   width: 27px;
   height: 34px;
+  color: $special-first-color;
+
+  &:hover,
+  &:focus {
+    color: $special-link-hover;
+  }
+
+  &:active {
+    color: $special-link-hover;
+    opacity: 0.3;
+  }
 }
+
