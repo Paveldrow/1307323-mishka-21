@@ -17,10 +17,20 @@
   }
 }
 
-.page-footer__footer-logo {
+.page-footer__logo {
   width: 101px;
   height: 34px;
   display: none;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $special-link-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;

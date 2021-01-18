@@ -21,28 +21,29 @@
 
 .social-list__link {
   display: block;
+
+  &:hover .social-list__icon,
+  &:focus .social-list__icon {
+    opacity: 1;
+    fill: $special-link-hover;
+  }
+
+  &:active .social-list__icon {
+    opacity: 0.3;
+  }
 }
 
 .social-list__link-instagram {
   width: 22px;
   height: 21px;
-  background-image: url("../img/icon-social-instagram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .social-list__link-facebook {
   width: 15px;
   height: 28px;
-  background-image: url("../img/icon-social-facebook.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .social-list__link-twitter {
   width: 23px;
   height: 20px;
-  background-image: url("../img/icon-social-twitter.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }

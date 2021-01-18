@@ -18,6 +18,12 @@
   min-height: 103px;
   flex-grow: 1;
 
+  &:hover,
+  &:focus {
+    padding-bottom: 6px;
+    margin-top: -6px;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 119px;
     font-size: 20px;
@@ -68,6 +74,7 @@
       width: 40px;
       height: 62px;
       background-image: url("../img/icon-categories-interior.svg");
+      opacity: 0.7;
 
       @media (min-width: $tablet-width) {
         top: 30px;
@@ -86,6 +93,7 @@
       width: 60px;
       height: 60px;
       background-image: url("../img/icon-categories-toys.svg");
+      opacity: 0.7;
 
       @media (min-width: $tablet-width) {
         top: 32px;
