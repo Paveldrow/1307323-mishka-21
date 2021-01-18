@@ -110,28 +110,43 @@
   &--email {
     position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: -11px;
-      bottom: 3px;
-      height: 1px;
-      background-color: $special-first-color;
 
-      @media (min-width: $tablet-width) {
-        top: 29px;
-        right: 52px;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 33px;
-      }
-    }
   }
 
   @media (min-width: $tablet-width) {
     width: 257px;
+  }
+}
+
+.contacts__email {
+  color: inherit;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: -11px;
+    bottom: 3px;
+    height: 1px;
+    background-color: $special-first-color;
+
+    &:hover {
+      color: red;
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 29px;
+      right: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 33px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $special-link-hover;
   }
 }
 

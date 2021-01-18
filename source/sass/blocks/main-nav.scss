@@ -277,7 +277,7 @@
 
   &[href]:hover,
   &[href]:focus {
-    color: $link-hover;
+    opacity: 0.6;
   }
 
   &[href]:active {
