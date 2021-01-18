@@ -49,7 +49,7 @@
             <a
               class="main-nav__link main-nav__link--user-link main-nav__link--searching"
               href="#"
-              >
+            >
               <svg class="main-nav__icon" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
@@ -62,7 +62,7 @@
             <a
               class="main-nav__link main-nav__link--user-link main-nav__link--cart"
               href="#"
-              >
+            >
               <svg class="main-nav__icon" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
@@ -128,7 +128,11 @@
                     type="checkbox"
                     name="white"
                     checked
-                  /><label class="filter__label filter__label--color" for="color-white">Белый</label>
+                  /><label
+                    class="filter__label filter__label--color"
+                    for="color-white"
+                    >Белый</label
+                  >
                 </li>
                 <li class="filter__item filter__item--color">
                   <input
@@ -137,7 +141,11 @@
                     type="checkbox"
                     name="gray"
                     checked
-                  /><label class="filter__label filter__label--color" for="color-gray">Серый</label>
+                  /><label
+                    class="filter__label filter__label--color"
+                    for="color-gray"
+                    >Серый</label
+                  >
                 </li>
                 <li class="filter__item filter__item--color">
                   <input
@@ -145,7 +153,9 @@
                     id="color-tiffany"
                     type="checkbox"
                     name="tiffany"
-                  /><label class="filter__label filter__label--color" for="color-tiffany"
+                  /><label
+                    class="filter__label filter__label--color"
+                    for="color-tiffany"
                     >«Тиффани»</label
                   >
                 </li>
@@ -155,7 +165,9 @@
                     id="color-black"
                     type="checkbox"
                     name="black"
-                  /><label class="filter__label filter__label--color" for="color-black"
+                  /><label
+                    class="filter__label filter__label--color"
+                    for="color-black"
                     >Черный</label
                   >
                 </li>
@@ -165,7 +177,9 @@
                     id="color-pink"
                     type="checkbox"
                     name="pink"
-                  /><label class="filter__label filter__label--color" for="color-pink"
+                  /><label
+                    class="filter__label filter__label--color"
+                    for="color-pink"
                     >Розовый</label
                   >
                 </li>
@@ -175,7 +189,9 @@
                     id="color-orange"
                     type="checkbox"
                     name="orange"
-                  /><label class="filter__label filter__label--color" for="color-orange"
+                  /><label
+                    class="filter__label filter__label--color"
+                    for="color-orange"
                     >Оранжевый</label
                   >
                 </li>
@@ -193,7 +209,7 @@
                     >Имя:</label
                   >
                   <input
-                    class="filter__input-personal"
+                    class="filter__input-text filter__input-personal"
                     type="text"
                     name="name"
                     id="name-field"
@@ -208,7 +224,7 @@
                     >Фамилия:</label
                   >
                   <input
-                    class="filter__input-personal"
+                    class="filter__input-text filter__input-personal"
                     type="text"
                     name="surname"
                     id="surname-field"
@@ -223,7 +239,7 @@
                     >Отчество:</label
                   >
                   <input
-                    class="filter__input-personal"
+                    class="filter__input-text filter__input-personal"
                     type="text"
                     name="patronymic"
                     id="patronymic-field"
@@ -241,11 +257,12 @@
                 >Тел</label
               >
               <input
-                class="filter__input-personal filter__input-personal--contacts filter__input-personal--phone"
+                class="filter__input-text filter__input-personal filter__input-personal--contacts filter__input-personal--phone"
                 type="tel"
                 name="phone"
                 id="phone-field"
                 placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                required
               />
             </li>
             <li class="filter__wrapper container">
@@ -255,9 +272,7 @@
                 >E-mail</label
               >
               <input
-                class="filter__input-personal
-                filter__input-personal--contacts
-                filter__input-personal--email"
+                class="filter__input-text filter__input-personal filter__input-personal--contacts filter__input-personal--email"
                 type="email"
                 name="email"
                 id="email-field"
@@ -267,9 +282,13 @@
           </ul>
           <div class="filter__field filter__field--textarea">
             <div class="filter__wrapper container">
-              <label class="filter__title filter__title--textarea" for="comment-field">Доп</label>
+              <label
+                class="filter__title filter__title--textarea"
+                for="comment-field"
+                >Доп</label
+              >
               <textarea
-                class="filter__textarea"
+                class="filter__input-text filter__textarea"
                 id="comment-field"
                 placeholder="Опишите все ваши пожелания к заказу"
               ></textarea>
@@ -293,8 +312,7 @@
         </a>
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link-instagram" href="#"
-              >
+            <a class="social-list__link social-list__link-instagram" href="#">
               <svg class="social-list__icon" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
@@ -302,8 +320,7 @@
             >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link-facebook" href="#"
-              >
+            <a class="social-list__link social-list__link-facebook" href="#">
               <svg class="social-list__icon" width="15" height="28">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
@@ -311,12 +328,12 @@
             >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link-twitter" href="#"
-              >
+            <a class="social-list__link social-list__link-twitter" href="#">
               <svg class="social-list__icon" width="23" height="20">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
-              <span class="visually-hidden">twitter</span></a>
+              <span class="visually-hidden">twitter</span></a
+            >
           </li>
         </ul>
         <div class="copyright">
