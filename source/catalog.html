@@ -47,8 +47,8 @@
             <a
               class="main-nav__link main-nav__link--user-link main-nav__link--searching"
               href="#"
-              >
-              <svg class="main-nav__icon" width="22" height="22">
+            >
+              <svg class="main-nav__icon" width="18" height="18">
                 <use xlink:href="img/sprite.svg#icon-search"></use>
               </svg>
               <span class="main-nav__searching">Поиск по сайту </span></a
@@ -60,8 +60,8 @@
             <a
               class="main-nav__link main-nav__link--user-link main-nav__link--cart"
               href="#"
-              >
-              <svg class="main-nav__icon" width="22" height="22">
+            >
+              <svg class="main-nav__icon" width="21" height="18">
                 <use xlink:href="img/sprite.svg#icon-cart"></use>
               </svg>
               Корзина: пока пуста</a
@@ -100,7 +100,7 @@
               />
               <img
                 class="product__image"
-                src="img/product-bunny-mobile.jpg 1x"
+                src="img/product-bunny-mobile.jpg"
                 srcset="img/product-bunny-mobile@2x.jpg 2x"
                 width="260"
                 height="195"
@@ -112,32 +112,39 @@
               <p class="product__parameters">Рост 30 см, вес 200 г</p>
               <div class="product__price-block">
                 <p class="product__price">1 200 руб.</p>
-                <a class="product__button" href="#"
-                  ><span class="visually-hidden">Купить</span></a
-                >
+                <a class="product__button" href="#">
+                  <span class="visually-hidden">Купить</span>
+                  <svg class="product__button-icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </li>
           <li class="catalog__item product">
             <picture>
-                <source
-                  media="(min-width: 1150px)"
-                  srcset="
-                    img/product-basket-desktop.jpg 1x,
-                    img/product-basket-desktop@2x.jpg 2x">
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/product-basket-tablet.jpg 1x,
-                    img/product-basket-tablet@2x.jpg 2x">
-            <img
-              class="product__image"
-              src="img/product-basket-mobile.jpg 1x"
-              srcset="img/product-basket-mobile@2x.jpg 2x"
-              width="260"
-              height="195"
-              alt="Фото товара Корзинка для белья"
-            >
+              <source
+                media="(min-width: 1150px)"
+                srcset="
+                  img/product-basket-desktop.jpg    1x,
+                  img/product-basket-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/product-basket-tablet.jpg    1x,
+                  img/product-basket-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="product__image"
+                src="img/product-basket-mobile.jpg"
+                srcset="img/product-basket-mobile@2x.jpg 2x"
+                width="260"
+                height="195"
+                alt="Фото товара Корзинка для белья"
+              />
             </picture>
             <div class="product__caption">
               <h3 class="product__title">Корзинка для белья</h3>
@@ -145,40 +152,51 @@
               <div class="product__price-block">
                 <p class="product__price">690 руб.</p>
                 <a class="product__button" href="#"
-                  ><span class="visually-hidden">Купить</span></a
-                >
+                  ><span class="visually-hidden">Купить</span>
+                  <svg class="product__button-icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </div>
             </div>
           </li>
           <li class="catalog__item product">
             <picture>
               <source
-              media="(min-width: 1150px)"
-              srcset="
-                img/product-big-basket-desktop.jpg 1x,
-                img/product-big-basket-desktop@2x.jpg 2x">
-            <source
-              media="(min-width: 768px)"
-              srcset="
-                img/product-big-basket-tablet.jpg 1x,
-                img/product-big-basket-tablet@2x.jpg 2x">
-            <img
-              class="product__image"
-              src="img/product-big-basket-mobile.jpg 1x"
-              srcset="img/product-big-basket-mobile@2x.jpg 2x"
-              width="260"
-              height="195"
-              alt="Фото товара Большая корзинка для игрушек"
-            />
+                media="(min-width: 1150px)"
+                srcset="
+                  img/product-big-basket-desktop.jpg    1x,
+                  img/product-big-basket-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  img/product-big-basket-tablet.jpg    1x,
+                  img/product-big-basket-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                class="product__image"
+                src="img/product-big-basket-mobile.jpg"
+                srcset="img/product-big-basket-mobile@2x.jpg 2x"
+                width="260"
+                height="195"
+                alt="Фото товара Большая корзинка для игрушек"
+              />
+            </picture>
             <div class="product__caption">
               <h3 class="product__title">Большая корзинка<br />для игрушек</h3>
               <p class="product__parameters">Диаметр 30 см, высота 30 см</p>
               <div class="product__price-block">
                 <p class="product__price">1 500 руб.</p>
                 <a class="product__button" href="#"
-                  ><span class="visually-hidden">Купить</span></a
-                >
-                </div>
+                  ><span class="visually-hidden">Купить</span>
+                  <svg class="product__button-icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </li>
         </ul>
@@ -206,8 +224,7 @@
         </a>
         <ul class="page-footer__social social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link-instagram" href="#"
-              >
+            <a class="social-list__link social-list__link-instagram" href="#">
               <svg class="social-list__icon" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
@@ -215,8 +232,7 @@
             >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link-facebook" href="#"
-              >
+            <a class="social-list__link social-list__link-facebook" href="#">
               <svg class="social-list__icon" width="15" height="28">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
@@ -224,12 +240,12 @@
             >
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link-twitter" href="#"
-              >
+            <a class="social-list__link social-list__link-twitter" href="#">
               <svg class="social-list__icon" width="23" height="20">
                 <use xlink:href="img/sprite.svg#icon-twitter"></use>
               </svg>
-              <span class="visually-hidden">twitter</span></a>
+              <span class="visually-hidden">twitter</span></a
+            >
           </li>
         </ul>
         <div class="copyright">
