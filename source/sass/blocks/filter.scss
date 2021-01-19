@@ -376,6 +376,29 @@
     border-color: $special-filter-hover;
     outline: none;
   }
+
+  &:hover ~ .filter__icon,
+  &:focus ~ .filter__icon {
+    opacity: 1;
+    fill: $special-filter-hover;
+  }
+}
+
+.filter__icon {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 20px;
+    right: 190px;
+  }
 }
 
 .filter__input-personal {
@@ -414,33 +437,8 @@
     }
   }
 
-  &--phone {
-    background-image: url("../img/icon-phone-form.svg");
-    background-repeat: no-repeat;
-    background-position: 98% center;
-
-    @media (min-width: $tablet-width) {
-      background-position: 95% center;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-position: 99% center;
-    }
-  }
-
   &--email {
     margin-bottom: 4px;
-    background-image: url("../img/icon-email-form.svg");
-    background-repeat: no-repeat;
-    background-position: 98% center;
-
-    @media (min-width: $tablet-width) {
-      background-position: 95% center;
-    }
-
-    @media (min-width: $desktop-width) {
-      background-position: 99% center;
-    }
   }
 
   &::placeholder {
