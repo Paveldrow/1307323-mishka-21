@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -146,6 +147,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     sprite,
     copy,
     images,
@@ -161,6 +163,7 @@ exports.default = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     sprite,
     copy,
     createWebp
