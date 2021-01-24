@@ -24,11 +24,11 @@
 
   &:hover,
   &:focus {
-    color: $special-link-hover;
+    color: $special-second-color-hover;
   }
 
   &:active {
-    color: $special-link-hover;
+    color: $special-second-color-hover;
     opacity: 0.3;
   }
 }
