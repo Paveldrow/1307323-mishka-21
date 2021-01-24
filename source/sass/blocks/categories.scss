@@ -53,7 +53,7 @@
   line-height: 24px;
 
   &:hover .categories__link-icon,
-  &:hover .categories__link-icon {
+  &:focus .categories__link-icon {
     opacity: 0.7;
   }
 

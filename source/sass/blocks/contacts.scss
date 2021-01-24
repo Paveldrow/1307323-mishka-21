@@ -143,7 +143,7 @@
     color: $special-second-color-hover;
   }
 
-  &:active:after {
+  &:active::after {
     background-color: rgba($special-first-color, 0.1);
   }
 }
