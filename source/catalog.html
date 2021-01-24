@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HTML Academy: Мишка - Каталог</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" />
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
@@ -13,7 +14,7 @@
         <div class="main-nav__logo-wrapper">
           <a class="page-header__logo" href="index.html">
             <picture>
-              <source
+              <sourcegi
                 media="(min-width: 1150px)"
                 srcset="img/logo-desktop.svg"
               />
@@ -22,8 +23,7 @@
                 src="img/logo-mobile.svg"
                 width="86"
                 height="35"
-                alt="Логотип Магазина Mishka"
-              />
+                alt="Логотип Магазина Mishka"/>
             </picture>
           </a>
           <button class="main-nav__toggle" type="button">
@@ -272,11 +272,11 @@
       </section>
       <section class="production container">
         <h2 class="production__title">Процесс производства</h2>
-        <video class="production__video" width="260" height="150">
-          <source src="video.mp4" type="video/mp4" />
-          <source src="video.webm" type="video/webm" />
-          <source src="video.ogv" type="video/ogg" />
-        </video>
+        <div class="production__video">
+          <svg class="production__video-button" width="101" height="77">
+            <use xlink:href="img/sprite.svg#icon-video-button"></use>
+          </svg>
+        </div>
         <p class="production__text">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео
           о том, как появляются наши товары.
@@ -327,15 +327,51 @@
         </div>
       </div>
     </footer>
-    <section class="modal display-none">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <p class="modal__discription">Выберите размер:</p>
-      <ul class="modal__list">
-        <li class="modal__item"><button type="button">S</button></li>
-        <li class="modal__item"><button type="button">M</button></li>
-        <li class="modal__item"><button type="button">L</button></li>
-      </ul>
-      <a class="modal__add-cart modal__button" href="#">Добавить</a>
+    <section class="modal">
+      <div class="modal__size-choice ">
+        <form
+          class="modal__form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <h2 class="modal__title">Добавить<br />в корзину</h2>
+          <p class="modal__discription">Выберите размер:</p>
+          <ul class="modal__list-size">
+            <li class="modal__item-size">
+              <input
+                class="modal__size"
+                type="radio"
+                id="size-s"
+                name="size"
+                value="s"
+                checked
+              />
+              <label class="modal__size-label" for="size-s">S</label>
+            </li>
+            <li class="modal__item-size">
+              <input
+                class="modal__size"
+                type="radio"
+                id="size-m"
+                name="size"
+                value="m"
+              />
+              <label class="modal__size-label" for="size-m">M</label>
+            </li>
+            <li class="modal__item-size">
+              <input
+                class="modal__size"
+                type="radio"
+                id="size-l"
+                name="size"
+                value="l"
+              />
+              <label class="modal__size-label" for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="modal__add-cart-button" type="submit">Добавить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

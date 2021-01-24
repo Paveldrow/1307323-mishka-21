@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <title>HTML Academy: Мишка - Форма заказа</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" />
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
 
@@ -352,5 +353,51 @@
         </div>
       </div>
     </footer>
+    <section class="modal">
+      <div class="modal__size-choice ">
+        <form
+          class="modal__form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <h2 class="modal__title">Добавить<br />в корзину</h2>
+          <p class="modal__discription">Выберите размер:</p>
+          <ul class="modal__list-size">
+            <li class="modal__item-size">
+              <input
+                class="modal__size"
+                type="radio"
+                id="size-s"
+                name="size"
+                value="s"
+                checked
+              />
+              <label class="modal__size-label" for="size-s">S</label>
+            </li>
+            <li class="modal__item-size">
+              <input
+                class="modal__size"
+                type="radio"
+                id="size-m"
+                name="size"
+                value="m"
+              />
+              <label class="modal__size-label" for="size-m">M</label>
+            </li>
+            <li class="modal__item-size">
+              <input
+                class="modal__size"
+                type="radio"
+                id="size-l"
+                name="size"
+                value="l"
+              />
+              <label class="modal__size-label" for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="modal__add-cart-button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

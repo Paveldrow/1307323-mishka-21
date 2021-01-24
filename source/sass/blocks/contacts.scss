@@ -128,10 +128,6 @@
     height: 1px;
     background-color: $special-first-color;
 
-    &:hover {
-      color: red;
-    }
-
     @media (min-width: $tablet-width) {
       top: 29px;
       right: 52px;
@@ -144,7 +140,11 @@
 
   &:hover,
   &:focus {
-    color: $special-link-hover;
+    color: $special-second-color-hover;
+  }
+
+  &:active::after {
+    background-color: rgba($special-first-color, 0.1);
   }
 }
 
