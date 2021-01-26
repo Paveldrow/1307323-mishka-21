@@ -17,7 +17,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
+  width: 100%;
   padding-top: 29px;
   padding-bottom: 46px;
   text-align: center;
@@ -55,6 +55,7 @@
   justify-content: space-between;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 31px;
   width: 260px;
   list-style: none;
 }

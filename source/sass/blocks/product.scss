@@ -1,4 +1,13 @@
 .product {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     min-height: 334px;
@@ -34,15 +43,6 @@
   padding-right: 28px;
   border: 1px solid $table-line;
 
-  &:hover,
-  &:focus {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  &:active {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -68,6 +68,19 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+}
+
+.product__title-link {
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
   }
 }
 
@@ -123,7 +136,7 @@
   margin-right: 3px;
 
   &:hover .product__button-icon,
-  &:focus {
+  &:focus .product__button-icon {
     opacity: 1;
     fill: $special-first-color;
   }
