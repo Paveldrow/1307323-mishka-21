@@ -42,7 +42,7 @@
 
     @media (min-width: $desktop-width) {
       top: -16px;
-     left: -111px;
+      left: -111px;
     }
   }
 
@@ -188,7 +188,6 @@
     width: 526px;
     margin: 0;
     background-image: url("../img/map-desktop.png");
-
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/map-desktop@2x.png");

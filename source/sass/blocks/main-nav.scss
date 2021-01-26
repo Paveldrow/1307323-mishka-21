@@ -18,8 +18,16 @@
 
 .main-nav__site-list {
   @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 0;
+    bottom: -45px;
     flex-wrap: wrap;
     width: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    order: -1;
   }
 }
 
@@ -143,9 +151,6 @@
   }
 
   &--site-item {
-    @media (min-width: $desktop-width) {
-    }
-
     &:nth-child(odd) {
       @media (min-width: $desktop-width) {
         border-right: 1px solid $header-border;
@@ -267,19 +272,6 @@
   @media (min-width: $tablet-width) {
     top: 35px;
     left: 33px;
-  }
-}
-
-.main-nav__site-list {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 0;
-    bottom: -45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-    order: -1;
   }
 }
 

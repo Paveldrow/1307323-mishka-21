@@ -289,9 +289,8 @@
 }
 
 .filter__input-radio {
-
   &:hover + label::before,
-  &:focus + label::before{
+  &:focus + label::before {
     border-color: $special-filter-hover;
   }
 }
@@ -337,16 +336,15 @@
 }
 
 .filter__input-checkbox {
-
   &:hover + label::before,
-  &:focus + label::before{
+  &:focus + label::before {
     border-color: $special-filter-hover;
   }
 }
 
 .filter__input-checkbox + label {
-
   outline: none;
+
   &::before {
     position: absolute;
     content: "";
